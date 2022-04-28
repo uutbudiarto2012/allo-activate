@@ -13,7 +13,7 @@ const Footer = () => {
         By accepting your treat, you agree to the <a href="/#" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
         </span>
         <button onClick={handleModal}  className='btn-get-wallet'>
-            Get Wallet
+            Get My Wallet
         </button>
         {
             open && <Confirm onClick={()=>setOpen(false)} />
