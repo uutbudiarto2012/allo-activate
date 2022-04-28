@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    .left{
+        width: 40px;
+        display: flex;
+        justify-content: center;align-items: center;
+        font-size: 22px;
+    }
+    .right{
+        flex: 1;
+        padding-right: 40px;
+        .title{
+            text-align: center;
+            color: '#888';
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import App from "./App";
+import ReactPwa from "react-pwa-app";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <ReactPwa
+    test //is to install in localhost, not required
+    config={{
+      swUrl: "/service-worker.js", // sw file in public default is service-worker.js
+      onUpdate: (reg) => {
+        console.log(reg);
+      },
+      onSuccess: (reg) => {
+        console.log(reg);
+      },
+      onError: (reg) => {
+        console.log(reg);
+      },
+      onPrompt: (e) => {
+        if (e.outcome === "accepted") {
+          console.log("user click on install and accept");
+        }
+        if (e.outcome === "dismissed") {
+          console.log("user click on install and refuse");
+        }
+      },
+    }}
+  >
     <App />
-  </React.StrictMode>
+  </ReactPwa>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
