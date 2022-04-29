@@ -1,11 +1,15 @@
 import "./Body.scss";
 
+import Wallet from "../../img/wallet.svg";
+import Point from "../../img/point.svg";
+import Benefit from "../../img/benefit.svg";
+
 const Body = () => {
   return (
     <div className="body">
       <div className="item">
         <div className="icon">
-            <img src="/wallet.svg" className="icon-img" alt="wallet" />
+          <img src={Wallet} className="icon-img" alt="wallet" />
         </div>
         <div className="text">
           <div className="title">Allow Wallet</div>
@@ -16,7 +20,7 @@ const Body = () => {
       </div>
       <div className="item">
         <div className="icon">
-            <img src="/point.svg" alt="point" className="icon-img" />
+          <img src={Point} alt="point" className="icon-img" />
         </div>
         <div className="text">
           <div className="title">Coupons & Points</div>
@@ -27,7 +31,7 @@ const Body = () => {
       </div>
       <div className="item">
         <div className="icon">
-            <img src="/benefit.svg" alt="benefit" className="icon-img" />
+          <img src={Benefit} alt="benefit" className="icon-img" />
         </div>
         <div className="text">
           <div className="title">Membership Benefits</div>

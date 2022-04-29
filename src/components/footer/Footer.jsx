@@ -11,10 +11,20 @@ const Footer = () => {
     <div className="footer">
       <span className="term">
         By accepting your treat, you agree to the{" "}
-        <a href="https://www.allobank.com/privacy" target="_blank" rel="noopener noreferrer">
-          Terms &{" "}
+        <a
+          href="https://www.allobank.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy |
         </a>{" "}
-        <a href="https://www.allobank.com/term-condition" target="_blank" rel="noopener noreferrer">Conditions</a>
+        <a
+          href="https://www.allobank.com/term-condition"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Terms & Conditions
+        </a>
       </span>
       <button onClick={handleModal} className="btn-get-wallet">
         Get My Wallet
