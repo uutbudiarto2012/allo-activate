@@ -10,14 +10,14 @@ const Footer = () => {
   return (
     <div className="footer">
       <span className="term">
-        By accepting your treat, you agree to the{" "}
+        By accepting your treat, you agree to the
         <a
           href="https://www.allobank.com/privacy"
           target="_blank"
           rel="noopener noreferrer"
         >
           Privacy Policy |
-        </a>{" "}
+        </a>
         <a
           href="https://www.allobank.com/term-condition"
           target="_blank"
