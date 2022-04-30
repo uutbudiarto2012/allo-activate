@@ -9,7 +9,7 @@ root.render(
   <ReactPwa
     test //is to install in localhost, not required
     config={{
-      swUrl: "/service-worker.js", // sw file in public default is service-worker.js
+      swUrl: "./service-worker.js", // sw file in public default is service-worker.js
       onUpdate: (reg) => {
         console.log(reg);
       },

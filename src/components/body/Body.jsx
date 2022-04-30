@@ -12,7 +12,7 @@ const Body = () => {
           <img src={Wallet} className="icon-img" alt="wallet" />
         </div>
         <div className="text">
-          <div className="title">Allow Wallet</div>
+          <div className="title">Allo Wallet</div>
           <div className="description">
             Experience convenience in daily transactions and get 5% interest.
           </div>
